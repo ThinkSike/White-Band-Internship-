@@ -81,3 +81,98 @@ Below is the sequential communication pathway mapped out when a local web browse
       ├──(5. NAT Routing over WAN)──► [ Google Server ]
       │                                     │
       ◄──(6. Sends HTTP Response Back)──────┘
+```
+# How a Browser Loads `www.google.com`
+
+## Step 1: DNS Resolution Request
+
+The local browser first checks its DNS cache for the domain `www.google.com`.
+
+- If a cached entry exists, it uses that information directly.
+- If no cached entry is found, the browser sends an outbound **UDP DNS query** to the configured local DNS server.
+- The query requests the IP address associated with `www.google.com`.
+
+---
+
+## Step 2: DNS Address Retrieval
+
+The DNS server processes the request and performs a lookup.
+
+- It locates the DNS records associated with `www.google.com`.
+- The server retrieves the corresponding public IP address.
+- The resolved IP address is returned to the client machine.
+
+**Example:**
+
+```text
+www.google.com → 142.250.x.x
+```
+
+---
+
+## Step 3: TCP Three-Way Handshake Establishment
+
+After obtaining the destination IP address, the client initiates a TCP connection.
+
+The standard **TCP Three-Way Handshake** occurs:
+
+```text
+Client                     Server
+  | ------ SYN ---------> |
+  | <---- SYN-ACK ------- |
+  | ------ ACK ---------> |
+```
+
+This handshake establishes a reliable communication session between the client and the server through the local router and internet infrastructure.
+
+---
+
+## Step 4: HTTPS Request and Response Delivery
+
+Once the TCP connection is established:
+
+1. The client sends an encrypted **HTTPS GET** request.
+2. Google's server receives and processes the request.
+3. The server returns the requested web assets, such as:
+   - HTML
+   - CSS
+   - JavaScript
+   - Images
+4. The response travels back through the network and default gateway.
+5. The browser renders the content and displays the webpage to the user.
+
+```text
+Browser ── HTTPS GET ──► Google Server
+Browser ◄─ HTTPS Response ─ Google Server
+```
+
+---
+
+## Summary Flow
+
+```text
+Browser
+   │
+   ▼
+DNS Query
+   │
+   ▼
+DNS Response (IP Address)
+   │
+   ▼
+TCP Three-Way Handshake
+(SYN → SYN-ACK → ACK)
+   │
+   ▼
+HTTPS GET Request
+   │
+   ▼
+Server Processing
+   │
+   ▼
+HTTPS Response
+   │
+   ▼
+Webpage Rendered
+```
+
