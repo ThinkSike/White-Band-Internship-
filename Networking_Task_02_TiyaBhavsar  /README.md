@@ -36,7 +36,9 @@ The purpose of this task is to understand common network devices, IP addressing 
 * **Purpose:** Converts signals between your ISP's infrastructure and your home router, bridging different physical transmission media.
 * **How it works:** Performs **MO**dulation (converting digital data from a computer into analog signals for telephone/cable lines) and **DEM**odulation (converting incoming analog signals back into digital data).
 * **Real-world usage:** A fiber-optic or cable modem connected to the wall outlet that brings raw broadband internet into your household.
-
+  
+### Terminal Configuration Screenshot
+![Network Configuration](./screenshots/network_config.png)
 ---
 
 ## 🔢 Part B: IP Address Classification
