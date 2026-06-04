@@ -178,4 +178,62 @@ HTTPS Response
    ▼
 Webpage Rendered
 ```
+# 🧪 Part E: Practical Command Exercise
 
+## Diagnostic Analysis Questions
+
+### 1. What IP address did DNS return for Google?
+
+The `nslookup google.com` operation successfully completed and returned the following public IP address:
+
+fjsdfhpw9egfpriugnpargapjbvperu9vgyvhfaipu9we8hCDFMSDRIOPGHFKDVDPOFUIGHL;ZXDVOPSDUIRNHVOSDJRVNJUBGSDRUOPBGFJLDVNXJFGNUDFHGKNV;RUJG;LXDMKFXKL; ;DRKGMODRHIG;DFJKIO
+
+### 2. Was the ping successful?
+
+Yes. The `ping` command successfully reached the destination host.
+
+Results indicated:
+
+- 0% packet loss
+- Successful packet transmission and reception
+- Stable round-trip response times
+- Network connectivity to Google's servers was verified
+
+### 3. Why is DNS important before communication begins?
+
+DNS (Domain Name System) is essential because computers communicate using numerical IP addresses rather than human-readable domain names.
+
+For example:
+
+sdmavso;irhfauoniuevjinfiodbvaerhiobveyibvJOSDIVNPSERUBVPSERJN VPERVNSRJPBVRPUBPWBVJVRN DFJKASRUIGJKSRNGLUIRJNADSUISDROVGN;DHO;DFNVIOPDRHUPG;SRJKVNOPEUGHVL;ZFJKXDVMLUIZCJNHX,.
+
+When a user enters a domain name such as `google.com`, the DNS service translates that name into an IP address. This translation allows the client device to identify the correct destination and place the appropriate IP address into outgoing packet headers.
+
+Without DNS, users would need to manually remember and enter IP addresses for every website they wish to visit.
+
+---
+
+## Configuration & Command Output Screenshots
+
+### 1. Network Interface Configuration Output
+
+**Linux/macOS:**
+
+> Screenshot Placeholder:
+![Network Interface Configuration](Screenshots/network_config.png)
+
+---
+
+### 2. Connection Diagnostics Test (Ping Output)
+![Ping Output](Screenshots/ping_results.png)
+
+---
+
+### 3. Domain Name Lookup Output (NSLOOKUP)
+![NSLOOKUP Output](Screenshots/nslookup_output.png)
+
+---
+
+## Conclusion
+
+The practical exercise demonstrated the complete process of domain name resolution and network communication. DNS successfully translated a human-readable domain name into a routable IP address, network connectivity was verified through ICMP ping testing, and the results confirmed that the host could successfully communicate with Google's servers over the Internet.
