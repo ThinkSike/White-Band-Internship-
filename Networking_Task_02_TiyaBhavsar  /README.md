@@ -222,18 +222,17 @@ Without DNS, users would need to manually remember and enter IP addresses for ev
 
 **Linux/macOS:**
 
-> Screenshot Placeholder:
-![Network Interface Configuration](Screenshots/network_config.png)
+> ![Network Interface Configuration](Screenshots/network_config.png)
 
 ---
 
 ### 2. Connection Diagnostics Test (Ping Output)
-![Ping Output](Screenshots/ping_results.png)
+> ![Ping Output](Screenshots/ping_results.png)
 
 ---
 
 ### 3. Domain Name Lookup Output (NSLOOKUP)
-![NSLOOKUP Output](Screenshots/nslookup_result.png)
+> ![NSLOOKUP Output](Screenshots/nslookup_result.png)
 
 ---
 
