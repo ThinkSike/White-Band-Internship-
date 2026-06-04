@@ -185,8 +185,11 @@ Webpage Rendered
 ### 1. What IP address did DNS return for Google?
 
 The `nslookup google.com` operation successfully completed and returned the following public IP address:
-
-fjsdfhpw9egfpriugnpargapjbvperu9vgyvhfaipu9we8hCDFMSDRIOPGHFKDVDPOFUIGHL;ZXDVOPSDUIRNHVOSDJRVNJUBGSDRUOPBGFJLDVNXJFGNUDFHGKNV;RUJG;LXDMKFXKL; ;DRKGMODRHIG;DFJKIO
+```text
+Name: google.com
+Address: 192.178.193.102
+```
+![NSLOOKUP Output](Screenshots/nslookup_result.png)
 
 ### 2. Was the ping successful?
 
@@ -204,9 +207,9 @@ Results indicated:
 DNS (Domain Name System) is essential because computers communicate using numerical IP addresses rather than human-readable domain names.
 
 For example:
-
-sdmavso;irhfauoniuevjinfiodbvaerhiobveyibvJOSDIVNPSERUBVPSERJN VPERVNSRJPBVRPUBPWBVJVRN DFJKASRUIGJKSRNGLUIRJNADSUISDROVGN;DHO;DFNVIOPDRHUPG;SRJKVNOPEUGHVL;ZFJKXDVMLUIZCJNHX,.
-
+```text
+google.com → 142.250.190.46
+```
 When a user enters a domain name such as `google.com`, the DNS service translates that name into an IP address. This translation allows the client device to identify the correct destination and place the appropriate IP address into outgoing packet headers.
 
 Without DNS, users would need to manually remember and enter IP addresses for every website they wish to visit.
@@ -230,7 +233,7 @@ Without DNS, users would need to manually remember and enter IP addresses for ev
 ---
 
 ### 3. Domain Name Lookup Output (NSLOOKUP)
-![NSLOOKUP Output](Screenshots/nslookup_output.png)
+![NSLOOKUP Output](Screenshots/nslookup_result.png)
 
 ---
 
