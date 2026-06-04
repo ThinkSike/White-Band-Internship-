@@ -36,9 +36,6 @@ The purpose of this task is to understand common network devices, IP addressing 
 * **Purpose:** Converts signals between your ISP's infrastructure and your home router, bridging different physical transmission media.
 * **How it works:** Performs **MO**dulation (converting digital data from a computer into analog signals for telephone/cable lines) and **DEM**odulation (converting incoming analog signals back into digital data).
 * **Real-world usage:** A fiber-optic or cable modem connected to the wall outlet that brings raw broadband internet into your household.
-  
-### Terminal Configuration Screenshot
-![Network Configuration](./Screenshots/network_config.png)
 ---
 
 ## 🔢 Part B: IP Address Classification
@@ -66,6 +63,10 @@ Based on our local Kali Linux deployment configurations, here are the system met
 2. **Is it Public or Private?** It is a **Private** IP address. It is strictly used for internal communication within the virtual local area network environment and cannot be routed across the public internet.
 3. **What role does your router play in your network?** The router serves as the essential intermediary edge gateway. It receives local traffic, alters private source IPs into a singular public IP via Network Address Translation (NAT), and securely forwards packets toward internet destinations.
 4. **What would happen if the DNS server stopped working?** If the DNS server stopped working, you would no longer be able to resolve human-readable domain names (like `google.com`) into their numeric IP locations. You would lose the ability to browse websites using standard web addresses, though direct connections made using raw IP addresses (like `8.8.8.8`) would technically still connect.
+
+ 
+### Terminal Configuration Screenshot
+![Network Configuration](./Screenshots/network_config.png)
 
 ---
 
