@@ -38,7 +38,7 @@ The purpose of this task is to understand common network devices, IP addressing 
 * **Real-world usage:** A fiber-optic or cable modem connected to the wall outlet that brings raw broadband internet into your household.
   
 ### Terminal Configuration Screenshot
-![Network Configuration](./screenshots/network_config.png)
+![Network Configuration](./Screenshots/network_config.png)
 ---
 
 ## 🔢 Part B: IP Address Classification
