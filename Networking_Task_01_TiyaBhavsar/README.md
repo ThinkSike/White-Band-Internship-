@@ -10,7 +10,7 @@ Below are the network configuration details gathered from the system terminal in
 
 * **Hostname (Device Name):** `kali`
 * **IPv4 Address:** `192.168.162.128`
-* **MAC Address:** `00:0C:29:75:11:77`
+* **MAC Address:** `aa:ss:dd:ff:gg:90`
 * **Default Gateway:** `192.168.162.2`
 * **DNS Server:** `192.168.162.2`
 
@@ -49,7 +49,7 @@ The text-based diagram below maps out how the device interacts through the local
                  │
                  ▼
       [ Local Kali Linux Device ] ─► (Device Private IP: 192.168.162.128)
-                                     (MAC Hardware Addr: 00:0C:29:75:11:77)
+                                     (MAC Hardware Addr: aa:ss:dd:ff:gg:90)
 
 ```
 ![Network Diagram](./screenshots/network_diagram.png)
