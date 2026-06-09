@@ -13,15 +13,15 @@ For this environment setup, **Kali Linux** was successfully deployed inside a vi
 ### System Verification Screenshots
 
 * [x] Desktop Environment initialized
-* [ ] 
+
 ![Desktop Environment](./Screenshots/Desktop.png)
 
 * [x] Active Terminal window functional
-* [ ] 
+
 ![Active Terminal window](./Screenshots/Terminal.png)
 
 * [x] Base system parameters verified
-* [ ] 
+ 
 ![Base system parameters verified](./Screenshots/SystemInfo.png)
 ---
 
@@ -33,7 +33,7 @@ The execution metrics for foundational shell traversal commands inside the bash 
 
   * **Purpose:** Displays the absolute directory path of the current shell focus.
   * **Output Example:** `/home/kali`
-  * 
+
  ![Commands](./Screenshots/pwd.png)
 
 * **`ls` (List Storage Contents):**
@@ -43,7 +43,7 @@ The execution metrics for foundational shell traversal commands inside the bash 
 * **`ls -la` (List All Long Format):**
 
   * **Purpose:** Lists all system file elements in long-form details, including hidden configuration files (those prefixed with a dot `.`), along with permissions, file sizes, ownership information, and modification timestamps.
-  * 
+
 ![Commands](./Screenshots/ls.png)
 
 * **`cd` (Change Directory):**
@@ -57,7 +57,7 @@ The execution metrics for foundational shell traversal commands inside the bash 
 * **`history` (Command Log Review):**
 
   * **Purpose:** Displays a chronological list of previously executed commands in the current shell session.
-  * 
+
 ![Commands](./Screenshots/history.png)
 
 * **`whoami` (Identity Verification):**
@@ -110,6 +110,82 @@ Cyber Security_Lab/
 * Built a nested directory path for `Linux/Cyber Security/Ethical Hacking`.
 * Created the `Reports` directory under the Linux section.
 * Verified the final directory hierarchy using the `tree` utility.
+
+## 📄 Part D: File Management
+
+File management operations were performed within the `Cyber Security_Lab` workspace using standard Linux utilities. These commands were used to create, copy, move, rename, and delete files while maintaining an organized directory structure.
+
+### 1. File Management Commands Used
+
+#### Creating Files
+
+The `touch` command was used to create empty files for storing notes, commands, and reports.
+
+```bash
+touch "Cyber Security_Lab/Linux/notes.txt"
+touch "Cyber Security_Lab/Linux/commands.txt"
+touch "Cyber Security_Lab/Linux/report.txt"
+```
+
+#### Copying Files
+
+The `cp` command was used to create a duplicate copy of `notes.txt` in the Networking directory.
+
+```bash
+cp "Cyber Security_Lab/Linux/notes.txt" "Cyber Security_Lab/Networking/"
+```
+
+#### Moving Files
+
+The `mv` command was used to move the report file into the dedicated Reports directory.
+
+```bash
+mv "Cyber Security_Lab/Linux/report.txt" "Cyber Security_Lab/Linux/Reports/"
+```
+
+#### Renaming Files
+
+The `mv` command was also used to rename `commands.txt` to `linux_commands.txt`.
+
+```bash
+mv "Cyber Security_Lab/Linux/commands.txt" "Cyber Security_Lab/Linux/linux_commands.txt"
+```
+
+#### Deleting Files
+
+The `rm` command was used to remove the temporary `notes.txt` file after completing the required operations.
+
+```bash
+rm "Cyber Security_Lab/Linux/notes.txt"
+```
+
+### 2. Operations Summary
+
+* Created `notes.txt`, `commands.txt`, and `report.txt` using the `touch` command.
+* Copied `notes.txt` to the `Networking` directory using `cp`.
+* Moved `report.txt` to the `Linux/Reports` directory using `mv`.
+* Renamed `commands.txt` to `linux_commands.txt`.
+* Removed the temporary `notes.txt` file using `rm`.
+
+### File Management Verification Screenshot
+
+![ File Management](./Screenshots/DirectoryMGT.png)
+
+## 📊 Part E: System Information Collection
+
+The system diagnostic evaluations and configuration parameters pulled directly from the virtual machine environment terminal window reveal the following exact environment telemetry variables:  
+
+* **Kernel Version:** `Linux kali 6.x-amd64`
+* **Username:** `kali`
+* **Current Directory Context:** `/home/kali`
+* **Current Date and Time:** *Tue Jun  9 08:24:34 AM EDT 2026*
+* **System Uptime Status:** Running continuously since current hypervisor initialization runtime logs 08:24:53 up  1:12,  1 user,  load average: 0.03, 0.02, 0.00
+---
+
+### System Diagnostic Verification Screenshot
+The terminal execution window capture below explicitly validates the extraction of the telemetry variables listed above via standard system information utility commands (`uname -a`, `hostname`, `whoami`, `date`, `uptime`, and `pwd`):
+
+![System Information Verification](./Screenshots/commands.png)
 
 # Part F: Linux Research Activity
 
