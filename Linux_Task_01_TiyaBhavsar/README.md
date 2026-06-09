@@ -13,11 +13,13 @@ For this environment setup, **Kali Linux** was successfully deployed inside a vi
 ### System Verification Screenshots
 
 * [x] Desktop Environment initialized
+![Desktop Environment](./Screenshots/Desktop.png)
+
 * [x] Active Terminal window functional
+![Active Terminal window](./Screenshots/Terminal.png)
+
 * [x] Base system parameters verified
-
-*(Your snapshot `network_config.png` containing terminal logs acts as verification evidence for this deployment.)*
-
+![Base system parameters verified](./Screenshots/SystemInfo.png)
 ---
 
 ## 🧭 Part B: Basic Navigation Commands
