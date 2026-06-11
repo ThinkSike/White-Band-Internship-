@@ -3,7 +3,6 @@
 ## Objective
 The purpose of this task is to master Linux user administration, multi-tenant group provisioning, resource ownership modification, and absolute/symbolic system file permissions configurations[cite: 293].
 
----
 # 👥 Part A: Understanding Users
 
 ## 1. Diagnostic Questions & Answers
@@ -48,7 +47,7 @@ kali:x:1000:1000:Kali User:/home/kali:/bin/bash
 
 ## Verification Screenshots
 
-![User Account Status Output](./screenshots/part_a_user_status.png)
+![User Account Status Output](./Screenshots/useracc.png)
 
 ---
 
@@ -100,7 +99,7 @@ groups student3
 ## Verification Screenshots
 
 *(Insert screenshots showing successful creation of users, groups, and membership validation.)*
-
+![Verify User and Group Creation](./Screenshots/mem.png)
 
 ```bash
 # Provisioning target group resources
@@ -128,10 +127,6 @@ id student1
 id student2
 groups student3
 ```
-
-**Verification Screenshots:**
-*(Insert screenshots here)*
-
 ---
 
 # Part C: File Ownership
@@ -174,7 +169,7 @@ sudo chown student1:interns Cyber_Security_Project/report.txt
 ```
 
 **Verification Screenshots:**
-*(Insert screenshots here)*
+Verify User and Group Creation
 
 ---
 
@@ -249,7 +244,7 @@ rwxrwxrwx
 ```
 
 **Verification Screenshots:**
-*(Insert screenshots here)*
+![Permissions Lifecycle](./Screenshots/permissions.png)
 
 ---
 
