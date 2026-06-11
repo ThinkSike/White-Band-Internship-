@@ -11,7 +11,7 @@ The purpose of this task is to master Linux user administration, multi-tenant gr
 
 Based on the local environment values, the active user context is:
 
-```text
+```
 kali
 ```
 
@@ -98,35 +98,8 @@ groups student3
 
 ## Verification Screenshots
 
-*(Insert screenshots showing successful creation of users, groups, and membership validation.)*
 ![Verify User and Group Creation](./Screenshots/mem.png)
 
-```bash
-# Provisioning target group resources
-sudo groupadd interns
-sudo groupadd cyberteam
-
-# Initializing distinct student profiles with custom parameters
-sudo useradd -m -s /bin/bash student1
-sudo useradd -m -s /bin/bash student2
-sudo useradd -m -s /bin/bash student3
-
-# Mapping student assignments to respective group configurations
-sudo usermod -aG interns student1
-sudo usermod -aG interns student2
-sudo usermod -aG cyberteam student3
-
-# Linux User Management, File Ownership, and Permissions Lab
-
-## Part B: Group Membership Validation
-
-### Confirming Runtime Identifier Mapping Structures
-
-```bash
-id student1
-id student2
-groups student3
-```
 ---
 
 # Part C: File Ownership
@@ -169,7 +142,7 @@ sudo chown student1:interns Cyber_Security_Project/report.txt
 ```
 
 **Verification Screenshots:**
-Verify User and Group Creation
+![File Ownership](./Screenshots/fileown.png)
 
 ---
 
