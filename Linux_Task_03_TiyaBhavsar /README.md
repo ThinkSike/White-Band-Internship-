@@ -103,7 +103,7 @@ An automated asset collection script named `system_report.sh` was developed to g
 # ==============================================================================
 # Script Name : system_report.sh
 # Purpose     : Automated System Information Report for Lab Documentation
-# Author      : Soham Sharma
+# Author      : Tiya Bhavsar
 # ==============================================================================
 
 echo "=================================================="
