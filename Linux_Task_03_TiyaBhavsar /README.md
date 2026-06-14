@@ -16,7 +16,12 @@ The purpose of this task is to master Linux process management utilities, evalua
 * **Which process is consuming the most Memory?** *(Note: Look closely at the `%MEM` column metrics in your terminal screenshot and supply the process label here).*
 
 ### Verification Screenshots
-![System Process Top Observers Output](./screenshots/part_a_process_monitor.png)
+
+![System Process psaux Output](./Screenshots/ps-aux.png)
+
+![System Process Top Observers Output](./Screenshots/top.png)
+
+![System Process HTop Observers Output](./Screenshots/htop.png)
 
 ---
 
@@ -39,7 +44,12 @@ To evaluate process lifecycle signals, a lingering session was intentionally sta
   
   # Force immediate termination if unresponsive (SIGKILL)
   kill -9 4128
-# Linux System Administration & Security Monitoring Lab Report
+  
+**Execution Result:** The process accepted the system signal and was safely unlinked from the kernel execution schedule, clearing the resource footprint.
+
+# Verification Screenshots
+
+![System Process Observers Output](./Screenshots/sleep.png)
 
 ## Part C: System Monitoring
 
