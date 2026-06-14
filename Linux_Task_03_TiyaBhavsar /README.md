@@ -59,13 +59,14 @@ The physical resources allocated to the Kali Linux environment were extracted us
 
 | Telemetry Parameter         | Discovered System Runtime Metric Value                  |
 | --------------------------- | ------------------------------------------------------- |
-| Total System RAM            | 3.8 GiB *(Adjust based on your allocated VM resources)* |
-| Available Free RAM          | 1.4 GiB *(Adjust based on your active usage)*           |
-| Root Disk Capacity Space    | `/dev/sda1` utilizing 42% of available space            |
-| System Uptime Tracker       | Up 2 hours, 14 minutes                                  |
+| Total System RAM            | 1.9 GiB  |
+| Available Free RAM          | 1.0 GiB *(Adjust based on your active usage)*           |
+| Root Disk Capacity Space    | `/dev/sda1` utilizing 22% of available space            |
+| System Uptime Tracker       | Up 32 minutes                                           |
 | Active Linux Kernel Version | Linux kali 6.x-amd64                                    |
 
-**Verification Screenshots:** *(Insert screenshots here)*
+**Verification Screenshots:** 
+![System Process Observers Output](./Screenshots/uname.png)
 
 ---
 
@@ -88,7 +89,8 @@ If a critical service stops running, the specific feature it controls becomes en
 * Stopping the **SSH service** blocks remote administrative access.
 * Disabling **NetworkManager** disconnects the machine from local routers and the internet.
 
-**Verification Screenshots:** *(Insert screenshots here)*
+**Verification Screenshots:** 
+![System Kill Process Observers Output](./Screenshots/killservice.png)
 
 ---
 
@@ -121,7 +123,6 @@ echo "Disk Usage:"
 df -h / | grep -v "Filesystem"
 echo "=================================================="
 ```
-
 ## 2. Execution Authorization Setup
 
 ```bash
@@ -132,7 +133,9 @@ chmod +x system_report.sh
 ./system_report.sh
 ```
 
-**Verification Screenshots:** *(Insert screenshots here)*
+**Verification Screenshots:** 
+
+![System Info](./Screenshots/report.png)
 
 ---
 
