@@ -10,13 +10,16 @@ The purpose of this task is to master the foundational principles of cybersecuri
 The core tenets of information security—the CIA Triad—form the architectural benchmark used by practitioners to evaluate risks, secure data assets, and construct security controls.
 
 ### 1. Architectural Component Definitions
-* **Confidentiality:** * *Definition:* Ensuring that sensitive data is shielded from unauthorized exposure, interception, or disclosure at rest, in transit, and in use.
+* **Confidentiality:**
+  * * *Definition:* Ensuring that sensitive data is shielded from unauthorized exposure, interception, or disclosure at rest, in transit, and in use.
   * *Importance:* Safeguards proprietary information, intellectual property, corporate secrets, and personally identifiable information (PII) from data breaches.
   * *Real-World Example:* Enforcing AES-256 bit end-to-end database encryption alongside strict Role-Based Access Controls (RBAC) to ensure only HR managers can read salary details.
-* **Integrity:** * *Definition:* Guaranteeing that information remains accurate, authentic, and completely unaltered by unauthorized actors or system failures throughout its lifecycle.
+* **Integrity:**
+  * *Definition:* Guaranteeing that information remains accurate, authentic, and completely unaltered by unauthorized actors or system failures throughout its lifecycle.
   * *Importance:* Preserves trust in systemic computing states. If data integrity drops, transactions, legal records, and administrative logs become completely unreliable.
   * *Real-World Example:* Using cryptographic hashing functions (like SHA-256) to verify that an executable software update file has not been altered or embedded with a Trojan payload by an attacker.
-* **Availability:** * *Definition:* Ensuring that authorized users have uninterrupted, reliable access to network resources, data channels, and hardware assets whenever required.
+* **Availability:**
+  * *Definition:* Ensuring that authorized users have uninterrupted, reliable access to network resources, data channels, and hardware assets whenever required.
   * *Importance:* Downtime halts business operations, breaks Service Level Agreements (SLAs), and causes critical operational disruptions.
   * *Real-World Example:* Deploying high-availability load balancers, multi-region database replication, and scrubbing lines to mitigate massive Distributed Denial of Service (DDoS) traffic spikes.
 
@@ -130,10 +133,3 @@ The strategic implementation plan for modern cybersecurity controls across an en
 * **Business Continuity Resilience:** Ensures that even in a worst-case security incident, critical campus systems can be restored quickly from secure backups with minimal downtime.
 
 ---
-
-## 📂 Project Directory Structure
-```text
-Cyber_Security_Task_02_SohamSharma/
-├── screenshots/
-│   └── part_b_equifax_analysis.png  <- Supporting diagnostic visual logs
-└── README.md                       <- Master comprehensive risk assessment file
