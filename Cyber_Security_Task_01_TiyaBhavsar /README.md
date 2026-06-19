@@ -78,32 +78,5 @@ A thorough security configuration assessment was performed across three major on
 ---
 
 ## 🎨 Part E: Cyber Security Awareness Poster
-Below is a text-based layout of a security awareness poster designed to educate team members on protecting the workplace environment:
 
-```text
-+-------------------------------------------------------------------------+
-|                                                                         |
-|   🛑 STOP. THINK. VERIFY.                                              |
-|   YOUR ACTIONS ARE THE COMPANY'S STRONGEST SHIELD!                      |
-|                                                                         |
-+-------------------------------------------------------------------------+
-|                                                                         |
-|  [🔑] USE STRONG UNIQUE PASSWORDS                                        |
-|       - Throw away old, reused passwords.                               |
-|       - Always use a secure Password Manager.                           |
-|                                                                         |
-|  [📱] LOCK DOWN YOUR LOGINS WITH MFA                                    |
-|       - Add an extra layer of defense with Authenticator apps.          |
-|       - Stop hackers instantly, even if they know your password.        |
-|                                                                         |
-|  [🎣] BAIT THE PHISHERS - CHECK BEFORE YOU CLICK                       |
-|       - Verify the sender's full email address before clicking links.   |
-|       - Corporate IT will NEVER ask you to text your credentials.       |
-|                                                                         |
-|  [💻] KEEP YOUR SOFTWARE UPDATED                                        |
-|       - Install patch updates as soon as they drop.                     |
-|       - Don't leave zero-day doors open on your machine.                |
-|                                                                         |
-+-------------------------------------------------------------------------+
-|   SECURE HYGIENE IS A DAILY HABIT. REPORT SUSPICIOUS EMAILS IMMEDIATELY! |
-+-------------------------------------------------------------------------+
+![Poster](./Screenshots/Urgent-Cybersecurity-Awareness-Poster.png)
