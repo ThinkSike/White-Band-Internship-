@@ -11,7 +11,7 @@ The core tenets of information security—the CIA Triad—form the architectural
 
 ### 1. Architectural Component Definitions
 * **Confidentiality:**
-  * * *Definition:* Ensuring that sensitive data is shielded from unauthorized exposure, interception, or disclosure at rest, in transit, and in use.
+  * *Definition:* Ensuring that sensitive data is shielded from unauthorized exposure, interception, or disclosure at rest, in transit, and in use.
   * *Importance:* Safeguards proprietary information, intellectual property, corporate secrets, and personally identifiable information (PII) from data breaches.
   * *Real-World Example:* Enforcing AES-256 bit end-to-end database encryption alongside strict Role-Based Access Controls (RBAC) to ensure only HR managers can read salary details.
 * **Integrity:**
