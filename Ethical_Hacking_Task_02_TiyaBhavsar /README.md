@@ -34,7 +34,8 @@ This project demonstrates the use of **Nmap** to perform network reconnaissance 
 * **Platform:** Linux
 * **Architecture:** Native Linux build
 
-> **Verification Screenshot:** 
+> **Verification Screenshot:**
+
 ![NMAP Version](./Screenshots/version.png)
 
 ---
@@ -58,7 +59,9 @@ nmap 127.0.0.1
 | Services         | SSH, HTTP |
 
 > **Verification Screenshot:**
+
 ![NMAP San](./Screenshots/scan.png)
+
 ---
 
 # Part C: Service Version Detection
@@ -79,7 +82,9 @@ nmap -sV 127.0.0.1
 | 80   | TCP      | Open  | HTTP    | Apache httpd 2.4.58 ((Unix) PHP/8.2.12) |
 
 > **Verification Screenshot:**
+
 ![NMAP Service Version](./Screenshots/sV.png)
+
 ---
 
 # Part D: Operating System Detection
