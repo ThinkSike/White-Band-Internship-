@@ -34,7 +34,8 @@ This project demonstrates the use of **Nmap** to perform network reconnaissance 
 * **Platform:** Linux
 * **Architecture:** Native Linux build
 
-> **Verification Screenshot:** *(Insert screenshot here)*
+> **Verification Screenshot:** 
+![NMAP Version](./Screenshots/version.png)
 
 ---
 
@@ -56,8 +57,8 @@ nmap 127.0.0.1
 | Open Ports       | 22, 80    |
 | Services         | SSH, HTTP |
 
-> **Verification Screenshot:** *(Insert screenshot here)*
-
+> **Verification Screenshot:**
+![NMAP San](./Screenshots/scan.png)
 ---
 
 # Part C: Service Version Detection
@@ -77,8 +78,8 @@ nmap -sV 127.0.0.1
 | 22   | TCP      | Open  | SSH     | OpenSSH 9.6p1 Debian                    |
 | 80   | TCP      | Open  | HTTP    | Apache httpd 2.4.58 ((Unix) PHP/8.2.12) |
 
-> **Verification Screenshot:** *(Insert screenshot here)*
-
+> **Verification Screenshot:**
+![NMAP Service Version](./Screenshots/sV.png)
 ---
 
 # Part D: Operating System Detection
@@ -103,7 +104,9 @@ sudo nmap -O 127.0.0.1
 
 Operating system detection is valuable during penetration testing because vulnerabilities are often platform-specific. Knowing the target operating system helps security professionals identify relevant exploits, reduce unnecessary testing, and avoid accidental system instability.
 
-> **Verification Screenshot:** *(Insert screenshot here)*
+> **Verification Screenshot:**
+
+![NMAP OS](./Screenshots/os.png)
 
 ---
 
