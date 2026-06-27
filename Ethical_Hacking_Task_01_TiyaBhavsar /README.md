@@ -86,7 +86,7 @@ The target application's response headers were analyzed using web terminal tools
 | **`Content-Security-Policy` (CSP)** | **Missing** | **High Risk:** The lack of strict content security directives leaves the application vulnerable to malicious code injection and Cross-Site Scripting (XSS). |
 
 ### Verification Screenshots
-![HTTP Header Compliance Scan](./Screenshots/sec-header.png)
+![HTTP Header Compliance Scan](./Screenshots/sec-head.png)
 
 ---
 
