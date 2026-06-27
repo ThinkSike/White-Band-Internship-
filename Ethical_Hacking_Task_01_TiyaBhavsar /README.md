@@ -93,7 +93,7 @@ The target application's response headers were analyzed using web terminal tools
 ## 🤖 Part F: Analyzing Robots.txt & Sitemap
 
 * **Is a `robots.txt` file present?** `Yes` (`https://despu.edu.in/robots.txt`)
-* **Is a sitemap configured?** `Yes` (`https://www.despu.edu.in/sitemap_index.xml`)
+* **Is a sitemap configured?** `Yes` (`https://despu.edu.in/sitemap_index.xml`)
 
 ### Technical Evaluation & Information Gathered:
 The `robots.txt` file contains standard web crawler exclusion directives. However, it explicitly lists sensitive directory paths, such as `/wp-admin/`, `/wp-includes/`, and `/config/backup/`. 
