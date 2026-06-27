@@ -31,11 +31,11 @@ A public WHOIS gateway lookup was executed to extract ownership data, historical
 
 ### Verification Screenshots
 
-![WHOIS Query Records Output](./Screenshots/whois_lookup.png)
+![WHOIS Query Records Output](./Screenshots/whois-lookup.png)
 
-![WHOIS Query Records Output](./Screenshots/target_lookup1.png)
+![WHOIS Query Records Output](./Screenshots/target-lookup1.png)
 
-![WHOIS Query Records Output](./Screenshots/target_lookup2.png)
+![WHOIS Query Records Output](./Screenshots/target-lookup2.png)
 
 ---
 
@@ -70,7 +70,7 @@ Using open-source footprinting utilities (such as built-in browser developer too
 The target environment relies on a standard Linux-Apache-MySQL-PHP (LAMP) application layer managed via a WordPress CMS. Cloudflare wraps the architecture to handle edge caching and basic web application firewall (WAF) filtering.
 
 ### Verification Screenshots
-![Web Stack Fingerprinting Analysis](./Screenshots/tech-id.png)
+![Web Stack Fingerprinting Analysis](./Screenshots/tech_id.png)
 
 ---
 
