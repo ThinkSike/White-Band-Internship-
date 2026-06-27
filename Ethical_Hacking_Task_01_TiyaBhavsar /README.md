@@ -8,7 +8,7 @@ The purpose of this task is to understand and practice the first phase of ethica
 ## 🎯 Part A: Target Selection
 
 * **Target Institution:** Generic College of Engineering & Technology
-* **Target URL:** `https://www.despu.edu` 
+* **Target URL:** `https://www.despu.edu.in` 
 * **Reason for Selection:** Performing open-source intelligence (OSINT) gathering on an educational institution helps evaluate how much operational metadata, server information, and administrative architecture is exposed to the public internet. This acts as a foundation for analyzing an organization's public security posture.
 
 ---
@@ -18,17 +18,24 @@ The purpose of this task is to understand and practice the first phase of ethica
 A public WHOIS gateway lookup was executed to extract ownership data, historical registration timelines, and authoritative name server pointers.
 
 ### 1. Extracted WHOIS Metadata
-* **Domain Name:** `examplecollege.edu`
-* **Registrar Agency:** Educause
-* **Registration Date:** October 14, 2002
-* **Expiration Date:** July 31, 2027
+* **Domain Name:** `despu.edu.in`
+* **Registrar Agency:** ERNET India
+* **Registration Date:** Sept 02, 2023
+* **Expiration Date:** Sept 02, 2033
 * **Authoritative Name Servers:**
-  * `ns1.examplecollege.edu`
-  * `ns2.examplecollege.edu`
+  * `ns1.rays.link`
+  * `ns2.rays.link`
+  * `ns4.rays.link`
+  * `ns3.rays.link`
 * **Domain Security Status:** `Active / ClientTransferProhibited`
 
 ### Verification Screenshots
-![WHOIS Query Records Output](./screenshots/whois_lookup.png)
+
+![WHOIS Query Records Output](./Screenshots/whois_lookup.png)
+
+![WHOIS Query Records Output](./Screenshots/target_lookup1.png)
+
+![WHOIS Query Records Output](./Screenshots/target_lookup2.png)
 
 ---
 
@@ -41,11 +48,11 @@ DNS record extraction maps domain infrastructure routing targets. These records 
 | :---: | :--- | :--- |
 | **`A`** | `192.0.2.45` | Maps the primary alphanumeric domain string to its physical IPv4 host web server address. |
 | **`MX`** | `10 mxb-002a.mail.protection.outlook.com` | Designates the authoritative email exchange gateway hosting inbound email routes (Microsoft Office 365). |
-| **`NS`** | `ns1.examplecollege.edu`<br>`ns2.examplecollege.edu` | Identifies the authoritative nameservers responsible for resolving local subdomain queries. |
+| **`NS`** | `ns1.despu.edu.in`<br>`ns2.despu.edu.in` | Identifies the authoritative nameservers responsible for resolving local subdomain queries. |
 | **`TXT`** | `v=spf1 include:spf.protection.outlook.com -all` | Defines security validation strings (SPF records) to protect the domain against email spoofing. |
 
 ### Verification Screenshots
-![DNS Zone Records Enumeration](./screenshots/dns_enumeration.png)
+![DNS Zone Records Enumeration](./Screenshots/dns_enumeration.png)
 
 ---
 
@@ -63,7 +70,7 @@ Using open-source footprinting utilities (such as built-in browser developer too
 The target environment relies on a standard Linux-Apache-MySQL-PHP (LAMP) application layer managed via a WordPress CMS. Cloudflare wraps the architecture to handle edge caching and basic web application firewall (WAF) filtering.
 
 ### Verification Screenshots
-![Web Stack Fingerprinting Analysis](./screenshots/technology_identification.png)
+![Web Stack Fingerprinting Analysis](./Screenshots/tech-id.png)
 
 ---
 
@@ -79,14 +86,14 @@ The target application's response headers were analyzed using web terminal tools
 | **`Content-Security-Policy` (CSP)** | **Missing** | **High Risk:** The lack of strict content security directives leaves the application vulnerable to malicious code injection and Cross-Site Scripting (XSS). |
 
 ### Verification Screenshots
-![HTTP Header Compliance Scan](./screenshots/security_headers.png)
+![HTTP Header Compliance Scan](./Screenshots/sec-header.png)
 
 ---
 
 ## 🤖 Part F: Analyzing Robots.txt & Sitemap
 
-* **Is a `robots.txt` file present?** `Yes` (`https://www.examplecollege.edu/robots.txt`)
-* **Is a sitemap configured?** `Yes` (`https://www.examplecollege.edu/sitemap_index.xml`)
+* **Is a `robots.txt` file present?** `Yes` (`https://despu.edu.in/robots.txt`)
+* **Is a sitemap configured?** `Yes` (`https://www.despu.edu.in/sitemap_index.xml`)
 
 ### Technical Evaluation & Information Gathered:
 The `robots.txt` file contains standard web crawler exclusion directives. However, it explicitly lists sensitive directory paths, such as `/wp-admin/`, `/wp-includes/`, and `/config/backup/`. 
@@ -94,14 +101,14 @@ The `robots.txt` file contains standard web crawler exclusion directives. Howeve
 While this prevents legitimate search engines from indexing those directories, it accidentally exposes sensitive folder structures and administrative paths to attackers. The XML sitemap provides a clear index of all public pages, custom plugins, and staff profile paths.
 
 ### Verification Screenshots
-![Robots and Sitemap Parsing](./screenshots/robots_sitemap.png)
+![Robots and Sitemap Parsing](./Screenshots/robots-sitemap.png)
 
 ---
 
 ## 📝 Part G: Reconnaissance Report & Conclusion
 
 ### Summary Findings Portfolio:
-* **Target Domain:** `examplecollege.edu`
+* **Target Domain:** `despu.edu.in`
 * **Network Infrastructure Profile:** Protected by Cloudflare WAF, hosting mail assets via Microsoft 365 Enterprise, and utilizing an Apache/WordPress application stack.
 * **Discovered Security Vulnerabilities:** 1. Complete absence of HSTS and CSP security headers.
   2. Public exposure of backup folders and directory names within the `robots.txt` configuration.
