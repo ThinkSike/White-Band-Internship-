@@ -8,7 +8,7 @@ The purpose of this task is to understand and practice the first phase of ethica
 ## 🎯 Part A: Target Selection
 
 * **Target Institution:** Generic College of Engineering & Technology
-* **Target URL:** `https://www.examplecollege.edu` *(Replace with your actual college or chosen organization URL)*
+* **Target URL:** `https://www.despu.edu` 
 * **Reason for Selection:** Performing open-source intelligence (OSINT) gathering on an educational institution helps evaluate how much operational metadata, server information, and administrative architecture is exposed to the public internet. This acts as a foundation for analyzing an organization's public security posture.
 
 ---
